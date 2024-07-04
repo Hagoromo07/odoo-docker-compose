@@ -1,0 +1,9 @@
+<odoo>
+    <record id="my_config_settings" model="res.config.settings">
+        <field name="group_use_lead" eval="True"/>
+        <field name="generate_lead_from_alias" eval="True"/>
+    </record>
+    <function model="res.config.settings" name="execute">
+        <value model="res.config.settings" search="[('id', '=', ref('my_config_settings'))]"/>
+    </function>
+</odoo>

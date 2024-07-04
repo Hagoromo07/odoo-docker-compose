@@ -1,0 +1,23 @@
+	    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    {
+        "version": "0.2.0",
+        "configurations": [
+            {
+                "name": "Odoo 17",
+                "type": "python",
+                "request": "attach",
+                "pathMappings": [
+                    {
+                        "localRoot": "C:/Users/JulienManda/Desktop/docker-compose/odoo-docker-compose/extra-addons",
+                        "remoteRoot": "/mnt/extra-addons"
+                    } 
+                ],
+                "port": 8014,
+                "debugServer": 3014,
+                "host": "0.0.0.0",
+                "justMyCode":false,
+            }
+        ]
+    }

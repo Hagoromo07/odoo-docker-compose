@@ -1,0 +1,32 @@
+version: '3.5'
+services:
+  odoo14-app:
+    build: 
+      dockerfile: Dockerfile
+    ports:
+      - '8014:8069'
+      - '20014:8072'
+      - '3014:5678'
+    tty: true
+    command: python3 -m debugpy --listen 0.0.0.0:5678 /usr/bin/odoo -c /etc/odoo/odoo.conf -u numigi_test_crm_manda_julien --dev=xml,qweb
+    volumes:
+      - odoo14-app:/var/lib/odoo/odoo14-app
+      - "./extra-addons:/mnt/extra-addons"
+      - "./etc:/etc/odoo"
+    environment: 
+      - "POSTGRES_HOST:odoo-db"
+      - "POSTGRES_USER:odoo"
+      - "POSTGRES_PASSWORD:odoo"
+
+  odoo14-db:
+    image: postgres:latest
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=odoo
+      - POSTGRES_PASSWORD=odoo
+    volumes:
+      - odoo14-data:/var/lib/postgresql/data
+
+volumes:
+  odoo14-app:
+  odoo14-data:
