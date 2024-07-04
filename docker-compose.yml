@@ -8,7 +8,7 @@ services:
       - '20014:8072'
       - '3014:5678'
     tty: true
-    command: python3 -m debugpy --listen 0.0.0.0:5678 /usr/bin/odoo -c /etc/odoo/odoo.conf -u numigi_test_crm_manda_julien --dev=xml,qweb
+    command: python3 -m debugpy --listen 0.0.0.0:5678 /usr/bin/odoo -c /etc/odoo/odoo.conf --test-enable -d db_14_01 -i numigi_test_crm_manda_julien --dev=xml,qweb
     volumes:
       - odoo14-app:/var/lib/odoo/odoo14-app
       - "./extra-addons:/mnt/extra-addons"

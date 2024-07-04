@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "numigi_test_crm_manda_julien",
+    'name': "Numigi test crm Manda Julien",
 
     'summary': """
         Short (1 phrase/line) summary of the module's purpose, used as
@@ -11,7 +11,7 @@
     """,
 
     'author': "Manda Julien",
-    'website': "http://www.yourcompany.com",
+    'website': "https://numigi.com/",
     'category': 'CRM',
     'version': '0.1',
     'depends': ['crm', 'website_crm', 'sales_team'],
@@ -23,4 +23,5 @@
         'views/crm_lead_view.xml',
     ],
     'demo': [],
+    'license': 'LGPL-3',
 }
