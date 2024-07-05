@@ -11,8 +11,11 @@ This module adds specific customizations to the Odoo CRM module to meet the requ
 2. **Automatically add the team leader to the list of members**:
    - Ensures that the team leader is always a member of the sales team by automatically adding them to the list of members.
 
-3. **Create three sales teams via a data file**:
-   - Creates the teams "Technical Support Team", "Sales Team", and "Customer Service Team" attached to the existing company with specific configurations.
+3. **Create three sales teams**:
+   Creates teams and attach to the existing company with specific configurations.
+   - Technical Support Team
+   - Sales Team
+   - Customer Service Team
 
 4. **Automatically check configuration parameters during module installation**.
    ![Screenshot](static/description/CRM-configuration-activated.png)
