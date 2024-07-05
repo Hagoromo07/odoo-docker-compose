@@ -15,7 +15,7 @@ This module adds specific customizations to the Odoo CRM module to meet the requ
    - Creates the teams "Technical Support Team", "Sales Team", and "Customer Service Team" attached to the existing company with specific configurations.
 
 4. **Automatically check configuration parameters during module installation**.
-   ![Screenshot](numigi_test_crm_manda_julien/static/description/CRM-configuration-activated.png)
+   ![Screenshot](static/description/CRM-configuration-activated.png)
 
 5. **Notification for opportunities remaining in draft status for more than 10 days**:
    - Sends a notification to all members of the sales team associated with the opportunity.
