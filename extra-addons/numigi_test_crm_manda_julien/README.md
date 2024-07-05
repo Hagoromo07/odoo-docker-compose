@@ -3,6 +3,14 @@
 ## Description
 This module adds specific customizations to the Odoo CRM module to meet the requirements defined in the technical test. It includes additional features for managing sales teams, notifications, and view configurations.
 
+## Installation
+1. Clone this repository into your Odoo addons directory.
+2. Update the module list in Odoo.
+3. Install the `CRM Customizations` module from the Odoo interface.
+
+## Configuration
+No additional configuration is required. The functionalities are triggered automatically upon module installation.
+
 ## Features
 
 1. **Add an emails field to the sales team**:
@@ -18,6 +26,7 @@ This module adds specific customizations to the Odoo CRM module to meet the requ
    - Customer Service Team
 
 4. **Automatically check configuration parameters during module installation**.
+
    ![Screenshot](static/description/CRM-configuration-activated.png)
 
 5. **Notification for opportunities remaining in draft status for more than 10 days**:
@@ -28,14 +37,6 @@ This module adds specific customizations to the Odoo CRM module to meet the requ
 
 7. **Assign default sales team for leads created via the contact form**:
    - Assigns leads created via the contact form to the "Sales Team" by default.
-
-## Installation
-1. Clone this repository into your Odoo addons directory.
-2. Update the module list in Odoo.
-3. Install the `CRM Customizations` module from the Odoo interface.
-
-## Configuration
-No additional configuration is required. The functionalities are triggered automatically upon module installation.
 
 ## License
 This module is published under the AGPLv3 license.
