@@ -19,9 +19,14 @@ class CrmLead(models.Model):
         team_members = opportunity.team_id.member_ids
         if team_members:
             message = f"""
-            Hello,<br/><br/>
-            Thank you for following up on this opportunity <a href="#" data-oe-model="crm.lead" data-oe-id="{opportunity.id}">{opportunity.name}</a>.<br/><br/>
-            Best regards.
+                Hello,
+                <br/>
+                <br/>
+                Thank you for following up on this opportunity. You can view it directly 
+                <a href="/web#id={opportunity.id}&model=crm.lead&view_type=form" target="_blank">{opportunity.name}</a>.
+                <br/>
+                <br/>
+                Best regards.
             """
             opportunity.message_post(
                 body=message,
