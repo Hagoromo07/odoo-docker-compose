@@ -1,4 +1,4 @@
-# CRM Customizations Module for Odoo 14
+# CRM Customizations for odoo 14
 
 ## Description
 This module adds specific customizations to the Odoo CRM module to meet the requirements defined in the technical test. It includes additional features for managing sales teams, notifications, and view configurations.
