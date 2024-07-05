@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from datetime import datetime, timedelta
-from odoo import models, api
+from odoo import models, api, fields
 
 class CrmLead(models.Model):
     _inherit = 'crm.lead'
