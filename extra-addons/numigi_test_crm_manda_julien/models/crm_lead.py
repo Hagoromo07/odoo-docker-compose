@@ -20,19 +20,15 @@ class CrmLead(models.Model):
         if team_members:
             message = f"""
                 Hello,
-                <br/>
-                <br/>
+                <br/><br/>
                 Thank you for following up on this opportunity. You can view it directly 
                 <a href="/web#id={opportunity.id}&model=crm.lead&view_type=form" target="_blank">{opportunity.name}</a>.
-                <br/>
-                <br/>
+                <br/><br/>
                 Best regards.
             """
-            opportunity.message_post(
-                body=message,
-                subtype_id=self.env.ref('mail.mt_note').id,
-                partner_ids=team_members.mapped('partner_id').ids,
-            )
+            opportunity.message_post( body=message, 
+                subtype_id=self.env.ref('mail.mt_note').id, 
+                partner_ids=team_members.mapped('partner_id').ids)
 
     @api.model
     def check_and_notify_draft_opportunities(self):

@@ -1,19 +1,24 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Numigi test crm Manda Julien",
+    'name': "CRM Customizations",
 
     'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
+        Create an Odoo CRM module that consolidates team member emails, includes team leaders automatically, forms dedicated sales teams, 
+        sends notifications for stagnant opportunities, restricts "Expected Revenue" visibility to administrators, and assigns default web leads.
+    """,
 
     'description': """
-        Long description of module's purpose
+        Develop a custom Odoo module for the CRM to add a consolidated emails field 
+        for team members and automatically include the team leader among the members. 
+        Create three specific sales teams, set up notifications for stagnant opportunities, 
+        make the "Expected Revenue" field visible only to sales administrators, 
+        and assign web-generated leads to a default sales team.
     """,
 
     'author': "Manda Julien",
     'website': "https://numigi.com/",
     'category': 'CRM',
-    'version': '0.1',
+    'version': '14.0.0.1',
     'depends': ['crm', 'website_crm', 'sales_team'],
     'data': [
         'data/crm_team_data.xml',
